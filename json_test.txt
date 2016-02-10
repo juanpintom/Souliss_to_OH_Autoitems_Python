@@ -1,0 +1,42 @@
+{
+	"id":[
+		{
+			"hlt":255,
+			"slot":[
+				{
+					"val":0,
+					"ddesc":"Luz Regulable",
+					"slo":0,
+					"typ":"19"
+				}
+			],
+			"ndesc":"Nodo O"
+		},
+    {
+			"hlt":255,
+			"slot":[
+				{
+					"val":26,
+					"ddesc":"Sensor de Temperatura",
+					"slo":0,
+					"typ":"52"
+				},
+				{
+					"val":20,
+					"ddesc":"Sensor de Humedad",
+					"slo":2,
+					"typ":"53"
+				},
+				{
+					"val":19,
+					"ddesc":"Sensor de Temperatura",
+					"slo":4,
+					"typ":"52"
+				},
+				{
+					"val":50,
+					"ddesc":"Sensor de Humedad",
+					"slo":6,
+					"typ":"53"
+				},
+				{"val":179,"ddesc":"Sensor de luz","slo":8,"typ":"54"},{"val":0,"ddesc":"ON\/OFF Salida digital con timer","slo":10,"typ":"11"},{"val":0,"ddesc":"ON\/OFF Salida digital con timer","slo":11,"typ":"11"},{"val":0,"ddesc":"ON\/OFF Salida digital con timer","slo":12,"typ":"11"},{"val":0,"ddesc":"ON\/OFF Salida digital con timer","slo":13,"typ":"11"},{"val":0,"ddesc":"Tira de LED RGB","slo":16,"typ":"16"},{"val":0,"ddesc":"ON\/OFF Salida digital con timer","slo":20,"typ":"11"},{"val":0,"ddesc":"ON\/OFF Salida digital con timer","slo":21,"typ":"11"},{"val":0,"ddesc":"ON\/OFF Salida digital con timer","slo":22,"typ":"11"},{"val":0,"ddesc":"ON\/OFF Salida digital con timer","slo":23,"typ":"11"}],"ndesc":"Nodo I"},{"hlt":25,"slot":[{"val":18,"ddesc":"Sensor de Temperatura","slo":0,"typ":"52"},{"val":47,"ddesc":"Sensor de Humedad","slo":2,"typ":"53"},{"val":0,"ddesc":"ON\/OFF Salida digital con timer","slo":4,"typ":"11"},{"val":0,"ddesc":"ON\/OFF Salida digital con timer","slo":5,"typ":"11"},{"val":0,"ddesc":"Luz Regulable","slo":6,"typ":"19"},{"val":0,"ddesc":"Luz Regulable","slo":8,"typ":"19"},{"val":154,"ddesc":"Sensor de luz","slo":10,"typ":"54"},{"val":240,"ddesc":"ON\/OFF Salida con modo AUT","slo":12,"typ":"12"},{"val":1.4296875,"ddesc":"Sensor de Corriente","slo":13,"typ":"56"},{"val":329,"ddesc":"Sensor de Potencia","slo":15,"typ":"57"}],"ndesc":"Nodo II"},{"hlt":25,"slot":[],"ndesc":"Nodo III"},{"hlt":255,"slot":[{"val":20,"ddesc":"Sensor de Temperatura","slo":0,"typ":"52"},{"val":37,"ddesc":"Sensor de Humedad","slo":2,"typ":"53"},{"val":0,"ddesc":"Luz Regulable","slo":4,"typ":"19"},{"val":0,"ddesc":"Luz Regulable","slo":6,"typ":"19"},{"val":0,"ddesc":"Luz Regulable","slo":8,"typ":"19"},{"val":0,"ddesc":"Sensor de luz","slo":10,"typ":"54"}],"ndesc":"Nodo IV"},{"hlt":1,"slot":[{"val":16.203125,"ddesc":"Sensor de Temperatura","slo":0,"typ":"52"},{"val":60.3125,"ddesc":"Sensor de Humedad","slo":2,"typ":"53"},{"val":0,"ddesc":"Luz Regulable","slo":4,"typ":"19"},{"val":0,"ddesc":"Luz Regulable","slo":6,"typ":"19"},{"val":0,"ddesc":"Luz Regulable","slo":8,"typ":"19"},{"val":0,"ddesc":"Sensor de luz","slo":10,"typ":"54"},{"val":15.75,"ddesc":"Sensor de Temperatura","slo":12,"typ":"52"}],"ndesc":"Nodo V"},{"hlt":255,"slot":[{"val":22,"ddesc":"Sensor de Temperatura","slo":0,"typ":"52"},{"val":37,"ddesc":"Sensor de Humedad","slo":2,"typ":"53"},{"val":0,"ddesc":"Luz Regulable","slo":4,"typ":"19"},{"val":0,"ddesc":"Luz Regulable","slo":6,"typ":"19"},{"val":0,"ddesc":"Luz Regulable","slo":8,"typ":"19"},{"val":40,"ddesc":"Sensor de Temperatura","slo":10,"typ":"52"},{"val":124,"ddesc":"Entrada analógica","slo":12,"typ":"51"},{"val":0,"ddesc":"Entrada analógica","slo":14,"typ":"51"},{"val":0,"ddesc":"Entrada analógica","slo":16,"typ":"51"},{"val":0,"ddesc":"Entrada analógica","slo":18,"typ":"51"}],"ndesc":"Nodo VI"}]}
