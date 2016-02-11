@@ -1,0 +1,81 @@
+Group all
+Group nodes "Nodos" <house> (all)
+Group diagnostic "Diagnostico" <keyring> (all)
+Group health "Salud" <keyring> (diagnostic)
+Group timestamp "Timestamp" <clock> (diagnostic)
+Group weather "Metereologia" <weather> (all)
+Group temperature "Temperatura" <temperature> (weather)
+Group humidity "Humedad" <humidity> (weather)
+Group lux "Luz Ambiental" <lux> (weather)
+Group:Number:AVG() Temperaturas_Medias "Temperaturas Medias [%.1f Â°C]" <temperature> (weather)
+Group light "Luces" <light> (all)
+Group node0 "Nodo O" <firstfloor> (all,nodes)
+Number health_node0 "Salud Nodo O [%1d]" <keyring> (node0, diagnostic) {souliss="D98:0:998"}
+String timestamp_node0 "Timestamp Nodo O [%1$td.%1$tm.%1$tY %1$tk:%1$tM:%1$tS]" <keyring> (node0, diagnostic) {souliss="D99:0:999"}
+Dimmer node0_slot0 "Luz Regulable [%.1f %%]" <slider> (node0, lights) {souliss="T19:0:0"}
+Group node1 "Nodo I" <firstfloor> (all,nodes)
+Number health_node1 "Salud Nodo I [%1d]" <keyring> (node1, diagnostic) {souliss="D98:1:998"}
+String timestamp_node1 "Timestamp Nodo I [%1$td.%1$tm.%1$tY %1$tk:%1$tM:%1$tS]" <keyring> (node1, diagnostic) {souliss="D99:1:999"}
+Number node1_slot0 "Sensor de Temperatura [%.1f C]" <temperature> (node1, temperature) {souliss="T52:1:0"}
+Number node1_slot2 "Sensor de Humedad [%.1f %%]" <humidity> (node1, humidity) {souliss="T53:1:2"}
+Number node1_slot4 "Sensor de Temperatura [%.1f C]" <temperature> (node1, temperature) {souliss="T52:1:4"}
+Number node1_slot6 "Sensor de Humedad [%.1f %%]" <humidity> (node1, humidity) {souliss="T53:1:6"}
+Number node1_slot8 "Sensor de luz [%.1f lux]" <lux> (node1, lux) {souliss="T54:1:8"}
+Switch node1_slot10 "ON\/OFF Salida digital con timer" <light> (node1, lights) {souliss="T11:1:10", autoupdate="false"}
+Switch node1_slot11 "ON\/OFF Salida digital con timer" <light> (node1, lights) {souliss="T11:1:11", autoupdate="false"}
+Switch node1_slot12 "ON\/OFF Salida digital con timer" <light> (node1, lights) {souliss="T11:1:12", autoupdate="false"}
+Switch node1_slot13 "ON\/OFF Salida digital con timer" <light> (node1, lights) {souliss="T11:1:13", autoupdate="false"}
+Color node1_slot16 "Tira de LED RGB" <pie> (node1, lights) {souliss="T16:1:16", autoupdate="false"}
+Switch node1_slot20 "ON\/OFF Salida digital con timer" <light> (node1, lights) {souliss="T11:1:20", autoupdate="false"}
+Switch node1_slot21 "ON\/OFF Salida digital con timer" <light> (node1, lights) {souliss="T11:1:21", autoupdate="false"}
+Switch node1_slot22 "ON\/OFF Salida digital con timer" <light> (node1, lights) {souliss="T11:1:22", autoupdate="false"}
+Switch node1_slot23 "ON\/OFF Salida digital con timer" <light> (node1, lights) {souliss="T11:1:23", autoupdate="false"}
+Group node2 "Nodo II" <firstfloor> (all,nodes)
+Number health_node2 "Salud Nodo II [%1d]" <keyring> (node2, diagnostic) {souliss="D98:2:998"}
+String timestamp_node2 "Timestamp Nodo II [%1$td.%1$tm.%1$tY %1$tk:%1$tM:%1$tS]" <keyring> (node2, diagnostic) {souliss="D99:2:999"}
+Number node2_slot0 "Sensor de Temperatura [%.1f C]" <temperature> (node2, temperature) {souliss="T52:2:0"}
+Number node2_slot2 "Sensor de Humedad [%.1f %%]" <humidity> (node2, humidity) {souliss="T53:2:2"}
+Switch node2_slot4 "ON\/OFF Salida digital con timer" <light> (node2, lights) {souliss="T11:2:4", autoupdate="false"}
+Switch node2_slot5 "ON\/OFF Salida digital con timer" <light> (node2, lights) {souliss="T11:2:5", autoupdate="false"}
+Dimmer node2_slot6 "Luz Regulable [%.1f %%]" <slider> (node2, lights) {souliss="T19:2:6"}
+Dimmer node2_slot8 "Luz Regulable [%.1f %%]" <slider> (node2, lights) {souliss="T19:2:8"}
+Number node2_slot10 "Sensor de luz [%.1f lux]" <lux> (node2, lux) {souliss="T54:2:10"}
+Switch node2_slot12 "ON\/OFF Salida con modo AUT" <light> (node2, lights) {souliss="T12:2:12:switch", autoupdate="false"}
+Switch node2_slot12_auto "ON\/OFF Salida con modo AUT_Auto" <light> (node2, lights) {souliss="T12:2:12:automode", autoupdate="false"}
+Number node2_slot13 "Sensor de Corriente [%.1f A]" <current> (node2, current) {souliss="T56:2:13"}
+Number node2_slot15 "Sensor de Potencia [%.1f W]" <watt> (node2, watt) {souliss="T57:2:15"}
+Group node3 "Nodo III" <firstfloor> (all,nodes)
+Number health_node3 "Salud Nodo III [%1d]" <keyring> (node3, diagnostic) {souliss="D98:3:998"}
+String timestamp_node3 "Timestamp Nodo III [%1$td.%1$tm.%1$tY %1$tk:%1$tM:%1$tS]" <keyring> (node3, diagnostic) {souliss="D99:3:999"}
+Group node4 "Nodo IV" <firstfloor> (all,nodes)
+Number health_node4 "Salud Nodo IV [%1d]" <keyring> (node4, diagnostic) {souliss="D98:4:998"}
+String timestamp_node4 "Timestamp Nodo IV [%1$td.%1$tm.%1$tY %1$tk:%1$tM:%1$tS]" <keyring> (node4, diagnostic) {souliss="D99:4:999"}
+Number node4_slot0 "Sensor de Temperatura [%.1f C]" <temperature> (node4, temperature) {souliss="T52:4:0"}
+Number node4_slot2 "Sensor de Humedad [%.1f %%]" <humidity> (node4, humidity) {souliss="T53:4:2"}
+Dimmer node4_slot4 "Luz Regulable [%.1f %%]" <slider> (node4, lights) {souliss="T19:4:4"}
+Dimmer node4_slot6 "Luz Regulable [%.1f %%]" <slider> (node4, lights) {souliss="T19:4:6"}
+Dimmer node4_slot8 "Luz Regulable [%.1f %%]" <slider> (node4, lights) {souliss="T19:4:8"}
+Number node4_slot10 "Sensor de luz [%.1f lux]" <lux> (node4, lux) {souliss="T54:4:10"}
+Group node5 "Nodo V" <firstfloor> (all,nodes)
+Number health_node5 "Salud Nodo V [%1d]" <keyring> (node5, diagnostic) {souliss="D98:5:998"}
+String timestamp_node5 "Timestamp Nodo V [%1$td.%1$tm.%1$tY %1$tk:%1$tM:%1$tS]" <keyring> (node5, diagnostic) {souliss="D99:5:999"}
+Number node5_slot0 "Sensor de Temperatura [%.1f C]" <temperature> (node5, temperature) {souliss="T52:5:0"}
+Number node5_slot2 "Sensor de Humedad [%.1f %%]" <humidity> (node5, humidity) {souliss="T53:5:2"}
+Dimmer node5_slot4 "Luz Regulable [%.1f %%]" <slider> (node5, lights) {souliss="T19:5:4"}
+Dimmer node5_slot6 "Luz Regulable [%.1f %%]" <slider> (node5, lights) {souliss="T19:5:6"}
+Dimmer node5_slot8 "Luz Regulable [%.1f %%]" <slider> (node5, lights) {souliss="T19:5:8"}
+Number node5_slot10 "Sensor de luz [%.1f lux]" <lux> (node5, lux) {souliss="T54:5:10"}
+Number node5_slot12 "Sensor de Temperatura [%.1f C]" <temperature> (node5, temperature) {souliss="T52:5:12"}
+Group node6 "Nodo VI" <firstfloor> (all,nodes)
+Number health_node6 "Salud Nodo VI [%1d]" <keyring> (node6, diagnostic) {souliss="D98:6:998"}
+String timestamp_node6 "Timestamp Nodo VI [%1$td.%1$tm.%1$tY %1$tk:%1$tM:%1$tS]" <keyring> (node6, diagnostic) {souliss="D99:6:999"}
+Number node6_slot0 "Sensor de Temperatura [%.1f C]" <temperature> (node6, temperature) {souliss="T52:6:0"}
+Number node6_slot2 "Sensor de Humedad [%.1f %%]" <humidity> (node6, humidity) {souliss="T53:6:2"}
+Dimmer node6_slot4 "Luz Regulable [%.1f %%]" <slider> (node6, lights) {souliss="T19:6:4"}
+Dimmer node6_slot6 "Luz Regulable [%.1f %%]" <slider> (node6, lights) {souliss="T19:6:6"}
+Dimmer node6_slot8 "Luz Regulable [%.1f %%]" <slider> (node6, lights) {souliss="T19:6:8"}
+Number node6_slot10 "Sensor de Temperatura [%.1f C]" <temperature> (node6, temperature) {souliss="T52:6:10"}
+Number node6_slot12 "Entrada analógica [%.1f %%]" <analog> (node6, analog) {souliss="T51:6:12"}
+Number node6_slot14 "Entrada analógica [%.1f %%]" <analog> (node6, analog) {souliss="T51:6:14"}
+Number node6_slot16 "Entrada analógica [%.1f %%]" <analog> (node6, analog) {souliss="T51:6:16"}
+Number node6_slot18 "Entrada analógica [%.1f %%]" <analog> (node6, analog) {souliss="T51:6:18"}
