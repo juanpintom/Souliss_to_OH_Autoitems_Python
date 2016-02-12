@@ -1,0 +1,66 @@
+Group	Todo
+Group	Nodos	"Habitaciones"	<house>
+Group	Debug	"Debug"	<keyring>
+Group	Timestamp	"Timestamp"	<clock>	(Debug)	
+Group	Salud	"Salud"	<keyring>	(Debug)	
+Group	Temperaturas	"Temperaturas"	<temperature>	(Metereologia)	
+Group	Humedades	"Humedades"	<climate>	(Metereologia)	
+Group:Number:AVG()	Temperaturas_Medias	"Temperaturas Medias  [%.1f °C]"	<temperature>	(Metereologia)	
+Group	Luces	"Luces"	<slider>	(Todo)	
+Group	Enchufes	"Enchufes"	<socket>	(Todo)	
+Group	Metereologia	"Metereologia"	<weather>	(Todo)	
+Group	Habitacion_Ocio	"Habitacion Ocio"	<firstfloor>	(Todo,Nodos)	
+Group	Habitacion_Dormir	"Habitacion Dormir"	<groundfloor>	(Todo,Nodos)	
+Group	Terraza	"Terraza"	<terrace>	(Todo,Nodos)	
+Group	Entrada	"Entrada"	<groundfloor>	(Todo,Nodos)	
+Group	Escalera	"Escalera"	<groundfloor>	(Todo,Nodos)	
+Group	T31	"Termostato"	<kitchen>	(Todo)	
+Group	Alarms	"Alarma"	<clock>	(Todo)	
+Group	Ordenadores	"Ordenadores"	<network>	(Todo)	
+String	Timestamp_Ocio	"Timestamp Ocio	[%1$td.%1$tm.%1$tY %1$tk:%1$tM:%1$tS]"	<clock>	(Habitacion_Ocio,Timestamp,Debug)		{ souliss="D99:1:999" }
+String	Timestamp_Entrada	"Timestamp Entrada [%1$td.%1$tm.%1$tY %1$tk:%1$tM:%1$tS]"	<clock>	(Entrada,Debug,Timestamp)		{ souliss="D99:2:999" }
+String	Timestamp_Dormir	"Timestamp Dormir [%1$td.%1$tm.%1$tY %1$tk:%1$tM:%1$tS]"	<clock>	(Habitacion_Dormir,Timestamp,Debug)		{ souliss="D99:4:999" }
+String	Timestamp_Nodo_3	"Timestamp Nodo_3 Escalera [%1$td.%1$tm.%1$tY %1$tk:%1$tM:%1$tS]"	<clock>	(Debug,Timestamp)		{ souliss="D99:5:999" }
+String	Timestamp_Nodo_4	"Timestamp Nodo_4, Pruebas [%1$td.%1$tm.%1$tY %1$tk:%1$tM:%1$tS]"	<clock>	(Debug,Timestamp)		{ souliss="D99:3:999" }
+Number	Temperatura_Exterior	"Temperatura Exterior [%.1f °C]"	<temperature>	(Terraza,Metereologia,Temperaturas)		{ souliss="T52:1:0" }
+Number	Humedad_Exterior	"Humedad Exterior [%.1f %%]"	<humidity>	(Terraza,Metereologia,Humedades)		{ souliss="T53:1:2" }
+Number	Temperatura_Ocio	"Temperatura Ocio [%.1f °C]"	<temperature>	(Habitacion_Ocio,Metereologia,Temperaturas)		{ souliss="T52:1:4" }
+Number	Humedad_Ocio	"Humedad Ocio [%.1f %%]"	<humidity>	(Habitacion_Ocio,Metereologia,Humedades)		{ souliss="T53:1:6" }
+Number	Presion_Exterior	"Presion Exterior [%.1f mb]"	<barometer>	(Terraza,Metereologia)		{ souliss="T53:4:6" }
+Number	Luz_Exterior	"Luz Exterior [%.1f lux]"	<lux>	(Terraza,Metereologia)		{ souliss="T53:1:8" }
+Switch	Slot11_Ocio	"Slot 11 Ocio"	<light>	(Habitacion_Ocio,Luces)		{ souliss="T11:1:10", autoupdate="false" }
+Switch	MesaPc_Ocio	"Mesa PC"	<light>	(Habitacion_Ocio,Luces)		{ souliss="T11:1:11", autoupdate="false" }
+Switch	MesaKarla_Ocio	"Mesa Karla"	<light>	(Habitacion_Ocio,Luces)		{ souliss="T11:1:12", autoupdate="false" }
+Switch	MesaTrabajo_Ocio	"Mesa Trabajo"	<light>	(Habitacion_Ocio,Luces)		{ souliss="T11:1:13", autoupdate="false" }
+Color	TV_Ocio	"RGB - TV"	<pie>	(Habitacion_Ocio)		{ souliss="T16:1:16", autoupdate="false" }
+Switch	Rele1_Ocio	"Rele 1"	<socket>	(Habitacion_Ocio,Enchufes)		{ souliss="T11:1:20", autoupdate="false" }
+Switch	Rele2_Ocio	"Rele 2"	<socket>	(Habitacion_Ocio,Enchufes)		{ souliss="T11:1:21", autoupdate="false" }
+Switch	Rele3_Ocio	"Rele 3"	<socket>	(Habitacion_Ocio,Enchufes)		{ souliss="T11:1:22", autoupdate="false" }
+Switch	Rele4_Ocio	"Rele 4"	<socket>	(Habitacion_Ocio,Enchufes)		{ souliss="T11:1:23", autoupdate="false" }
+Number	Consumo_Entrada	"Consumo [%.1f W]"	<energy>	(Entrada)		{ souliss="T57:2:15" }
+Number	Amperios_Entrada	"Amperios [%.1f A]"	<energy>	(Entrada)		{ souliss="T57:2:13" }
+Number	Temperatura_Entrada	"Temperatura Entrada [%.1f °C]"	<temperature>	(Metereologia,Temperaturas,Entrada)		{ souliss="T52:2:0" }
+Number	Humedad_Entrada	"Humedad Entrada [%.1f %%]"	<humidity>	(Metereologia,Humedades,Entrada)		{ souliss="T53:2:2" }
+Switch	Luz_Auto_Entrada	"Luz Auto Entrada"	<light>	(Entrada)		{ souliss="T12:2:12:switch", autoupdate="false" }
+Switch	Luz_Auto_Entrada_Setup	"Luz Auto Entrada Setup"	<light>	(Entrada)		{ souliss="T12:2:12:automode", autoupdate="false" }
+Number	Temperatura_Dormir	"Temperatura Habitacion [%.1f °C]"	<temperature>	(Metereologia,Temperaturas,Habitacion_Dormir)		{ souliss="T52:4:0" }
+Number	Humedad_Dormir	"Humedad Habitacion [%.1f %%]"	<humidity>	(Metereologia,Humedades,Habitacion_Dormir)		{ souliss="T53:4:2" }
+Dimmer	Lado1_Dormir	"Lado Juan [%.1f %%]"	<slider>	(Habitacion_Dormir)		{ souliss="T19:4:4" }
+Dimmer	Lado2_Dormir	"Lado Karla [%.1f %%]"	<slider>	(Habitacion_Dormir)		{ souliss="T19:4:6" }
+Dimmer	Luz_Dormir	"Luz Dormir [%.1f %%]"	<slider>	(Habitacion_Dormir)		{ souliss="T19:4:8" }
+Number	Temperatura_Escalera	"Temperatura Escalera [%.1f °C]"	<temperature>	(Metereologia,Temperaturas,Escalera)		{ souliss="T52:5:4" }
+Number	Humedad_Escalera	"Humedad Escalera [%.1f %%]"	<humidity>	(Metereologia,Humedades,Escalera)		{ souliss="T53:5:6" }
+Switch	KarlaPC	"Karla PC"	(Ordenadores)		{ nh="192.168.1.98", wol="192.168.1.255#00-16-17-EB-F5-5C", exec="OFF:sudo net rpc shutdown -C Apagado -I 192.168.1.98 -U Karla%44873152 -f -t 120" }
+Switch	JuanPC	"Juan PC"	(Ordenadores)		{ nh="192.168.1.99", wol="192.168.1.255#D0-27-88-47-19-43", exec="OFF:sudo net rpc shutdown -C Apagado -I 192.168.1.99 -U jpinto_666@hotmail.com%NtlmlV:82 -f -t 120" }
+Switch	PortatilLenovo	"Portatil Lenovo"	(Ordenadores)		{ nh="192.168.1.97", wol="192.168.1.255#AC-E0-10-1B-56-A9", exec="OFF:sudo net rpc shutdown -C Apagado -I 192.168.1.97 -U jpinto_666@hotmail.com%NtlmlV:82 -f -t 120" }
+String	w	"Hoy [%s]"	<w>	{ http="<[http://api.wunderground.com/api/5811059e885fd679/forecast/q/Spain/Valencia.xml:3600000:XSLT(wunderground_icon_forecast.xsl)]" }
+Dimmer	XBMC_Volume	"XBMC Volume [%.1f]"	(XBMC)		{ xbmc="=[#livingRoom|Application.Volume]" }
+String	PlayerTitle	"Ahora: "	<video>	{ xbmc="=[#livingRoom|Player.Title]" }
+Switch	Hyperion	"Hyperion"	<colorwheel>	{ exec="<[/home/osmc/scripts/hyperion_status.sh:600:REGEX((.*?))] >[ON:/home/osmc/scripts/hyperion_start.sh] >[OFF:/home/osmc/scripts/hyperion_stop.sh]" }
+Switch	Rele1_Ocio_Timer	"Rele 1 Timer (Ventilador)"	<light>
+Switch	Alarm_Master	"Master Alarm"	<presence>	(Alarms)	
+Number	Alarm_MasterTimeMins	"Master Alarm"	<clock>	(Alarms)	
+String	Alarm_MasterTime	"Master Alarm [%s]"	<clock>
+Switch	Alarm_MasterEvent	"Master Alarm Event"	<alarm>	(AlarmEvents)		{ autoupdate="false" }
+Number	Salud_Dormir	"Salud Dormitorio [%1d]"	<keyring>	(Todo,Habitacion_Dormir,Debug,Salud)		{ souliss="D98:4:998" }
+Dimmer	L1	"L1 [%.1f %%]"	<slider>	{ souliss="T19:5:4" }

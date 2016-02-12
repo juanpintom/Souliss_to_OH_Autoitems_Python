@@ -1,0 +1,45 @@
+sitemap simple label="Simple"
+{
+	Frame label="Floor1" {
+		Group item=Habitacion_Dormir {
+			Text item=Timestamp_Dormir			
+			Text item=Temperatura_Dormir			
+			Text item=Humedad_Dormir			
+			Slider item=Lado1_Dormir switchSupport			
+			Slider item=Lado2_Dormir switchSupport			
+			Slider item=Luz_Dormir switchSupport			
+			Text item=Salud_Dormir			
+		}		
+		Group item=Entrada {
+			Text item=Timestamp_Entrada			
+			Text item=Consumo_Entrada			
+			Text item=Amperios_Entrada			
+			Text item=Temperatura_Entrada			
+			Text item=Humedad_Entrada			
+			Switch item=Luz_Auto_Entrada			
+			Switch item=Luz_Auto_Entrada_Setup			
+		}		
+		Group item=Habitacion_Ocio {
+			Text item=Timestamp_Ocio			
+			Text item=Temperatura_Ocio			
+			Text item=Humedad_Ocio			
+			Switch item=Slot11_Ocio			
+			Switch item=MesaPc_Ocio			
+			Switch item=MesaKarla_Ocio			
+			Switch item=MesaTrabajo_Ocio			
+			Colorpicker item=TV_Ocio			
+			Switch item=Rele1_Ocio			
+			Switch item=Rele2_Ocio			
+			Switch item=Rele3_Ocio			
+			Switch item=Rele4_Ocio			
+		}		
+	}	
+	Frame label="Floor2" {
+		Group item=Terraza {
+			Text item=Temperatura_Exterior			
+			Text item=Humedad_Exterior			
+			Text item=Presion_Exterior			
+			Text item=Luz_Exterior			
+		}		
+	}	
+}

@@ -67,16 +67,7 @@ Text item=node5_slot12
 Group item=node6{
 Text item=health_node6
 Text item=timestamp_node6
-Text item=node6_slot0
-Text item=node6_slot2
-Slider item=node6_slot4 switchSupport
-Slider item=node6_slot6 switchSupport
-Slider item=node6_slot8 switchSupport
-Text item=node6_slot10
-Text item=node6_slot12
-Text item=node6_slot14
-Text item=node6_slot16
-Text item=node6_slot18
 }
+Text item=avg_temperatures
 }
 }
